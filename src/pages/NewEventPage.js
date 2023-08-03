@@ -1,5 +1,9 @@
 import React from "react";
+import EventForm from "../components/EventForm";
 
 export default function NewEventPage() {
-  return <h1>NewEventPage</h1>;
+  const submitHandler = (event) => {
+    event.preventDefault();
+  };
+  return <EventForm method="post" />;
 }
